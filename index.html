@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio de Acomodo</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- CSS personalizado -->
+  <link href="estilos.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center mt-4">Ejercicio de Acomodo</h1>
+    <div class="row mt-5">
+      <div class="col-md-4">
+        <div id="contenedor1" class="contenedor">
+          <h3 class="text-center">Contenedor 1</h3>
+          <div class="item item1" draggable="true">
+            <button type="button" class="btn btn-primary btn-lg mb-2"></button>
+            <button type="button" class="btn btn-success btn-lg mb-2"></button>
+            <button type="button" class="btn btn-primary btn-sm mb-2"></button>
+            <button type="button" class="btn btn-success btn-sm"></button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div id="contenedor2" class="contenedor">
+          <h3 class="text-center">Contenedor 2</h3>
+          <div class="item item2" draggable="true">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div id="contenedor3" class="contenedor">
+          <h3 class="text-center">Contenedor 3</h3>
+          <div class="item item3" draggable="true">
+            <input type="text" class="cuadro-normal form-control" placeholder="">
+            <input type="text" class="cuadro-redondeado form-control" placeholder="">
+            <input type="text" class="cuadro-sombra form-control" placeholder="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS y jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- JavaScript personalizado -->
+  <script src="contol.js"></script>
+</body>
+</html>
